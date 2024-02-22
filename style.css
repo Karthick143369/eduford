@@ -338,8 +338,8 @@ flex-direction: column;
   
 }
 .contact-title{
- position: absolute;
   width: 80%;
+  left: 4%;
   text-align: center;
   transform: translate(8%,-30%);
   letter-spacing: 2px;
