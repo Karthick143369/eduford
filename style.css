@@ -1,0 +1,366 @@
+/* GLOBAL */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  height: 100vh;
+  width: 100%;
+     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(/img/banner.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+.navmenu{
+flex: 1;
+text-align: right;
+
+}
+.navmenu ul li{
+  display: inline-block;
+  padding: 1% 3%;
+  font-size: .8rem;
+}
+
+
+.navmenu ul li{
+  display: inline-block;
+  padding: 1% 1%;
+  font-size: .8rem;
+  cursor:pointer;
+}
+
+.navmenu ul li::after{
+  content:'';
+  width: 0;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin-top: 4px;
+  transition: 0.5s;
+}
+.navmenu ul li:hover::after{
+  width: 100%;
+
+}
+
+.titles{
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+} 
+.titles h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  padding-bottom: 45px;
+}
+.titles p{
+  padding-bottom: 50px;
+}
+.titles a{
+  border: 1px solid white;
+  padding: 15px 40px;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.5S;
+
+}
+.titles a:active,.titles a:hover {
+  background-color: #6495ed;
+  border-color: #6495ed
+}
+.cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+
+}
+
+.title h1{ 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+}
+
+.title p{ 
+font-weight: 300;
+font-size: 14px;
+line-height: 1.6;
+letter-spacing: 0.1rem;
+color: #777;
+}
+
+
+.col-pgard,
+.col-gard,
+.col-ugard{
+background-color: #fff3f3;
+ border: none;
+ margin: 5%;
+ border-radius: 12px;
+ transition: box-shadow 0.6s
+}
+.card-title {
+  font-weight: bold;
+  padding-top: 35px;
+}
+.card-text-pgard,
+.card-text-gard,
+.card-text-ugard
+{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  color: #777;
+  padding: 1rem;
+}
+.card-text-ugard{
+padding-bottom: 25px;
+}
+.card-text-gard {
+  margin-bottom: 0;
+  padding-bottom: 70px;
+}
+.card-text-pgard {
+  margin-bottom: 0;
+  padding-bottom: 55px;
+}
+.col-pgard:hover,
+.col-gard:hover,
+.col-ugard:hover{
+
+  box-shadow: 0 0 2rem 0.8rem rgba(0,0,0,0.2)
+}
+
+.campus p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  color: #777;
+  padding-bottom: 10px;
+}
+
+.campus h1{ 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.campus{
+width: 90%;
+text-align: center;
+margin: auto;
+padding-top: 50px;
+}
+.london-img{
+  flex-basis: 32%;
+  border-radius: 12px;
+  position :relative;
+}
+.london-img img{
+width: 100%;
+
+
+}
+.london-layer{
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.london-layer h4 {
+  transform: translateY(30rem);
+  transition: all 0.4s
+}
+.london-layer:hover h4 {
+  transform: translateY(-5rem)
+}
+
+.london-layer:hover {
+  background-color: rgb(244 67 40 / 20%);
+}
+.facitities{
+  width: 90%;
+text-align: center;
+margin: auto;
+padding-top: 50px;
+
+}
+.facitities p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  color: #777;
+  padding-bottom: 10px; 
+}
+.facitities-title{
+  font-weight: bold;
+  padding-top: 35px;
+  text-align: left;
+  padding-left: 1rem;
+
+}
+.facitities-subtitle{
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  color: #777;
+  padding: 1rem;
+  text-align: left;
+}
+
+
+
+@media (max-width:700px) {
+
+  .titles h1{
+    font-weight: 600;
+    font-size:2rem;
+  }
+
+  .navmenu ul li{
+    font-size: 6px;
+    
+  }
+  
+  .cards{
+    flex-direction: column;
+  
+  }
+
+  .london-img{
+  flex-basis: 100%;
+  border-radius: 12px;
+  position :relative;
+  margin-bottom: 20px;
+}
+.lefttcard{
+margin:30px;  
+flex-direction: column;
+
+}
+.rightcard{
+  margin:-10px;  
+
+}
+.contact-title{
+  position: absolute;
+  width: 100%;
+
+}
+
+}
+
+
+
+.random{
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.lefttcard{
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 550px;
+  background-color: #fff3f3;
+  border-radius: 1rem;
+
+}
+.lefttcard img{
+  width: 100%;
+  border-radius: 25px;
+}
+.lefttcard p{
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  color: #777;
+  padding: 1rem;
+
+}
+
+
+.rightcard{
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 550px;
+  background-color: #fff3f3;
+  border-radius: 1rem;
+
+}
+.rightcard img{
+  width: 100%;
+  border-radius: 25px;
+}
+.rightcard p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  color: #777;
+}
+
+.contact-section{
+  text-align: center;
+  padding: 12rem 3rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(/img/banner2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 525px;
+  
+}
+.contact-title{
+ position: absolute;
+  width: 80%;
+  text-align: center;
+  transform: translate(8%,-30%);
+  letter-spacing: 2px;
+
+}
+.contact-button{
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 1% 3%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.contact-button:hover{
+  background-color: #6495ed;
+}
+.row-about{
+  width: 100%;
+  text-align: center;
+  transform: translate(0%,30%);
+  letter-spacing: 2px;
+}
+.row-about p{
+  font-size: 14px;
+}
